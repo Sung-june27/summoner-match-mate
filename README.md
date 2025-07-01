@@ -1,73 +1,55 @@
-# Welcome to your Lovable project
+## 🎮 프로젝트 개요
 
-## Project info
+리그 오브 레전드 전적 기반 듀오/팀원 매칭 서비스를 기획 중이야.  
+라이엇 API 또는 유저 입력을 통해 전적 정보를 기반으로,  
+비슷한 실력(KDA, 티어), 포지션, 성향(매너 등)이 맞는 유저를 추천해주는 기능 중심의 프로토타입을 만들고 싶어.
 
-**URL**: https://lovable.dev/projects/2a0513d6-2215-4fe0-9cfa-812b3d7dceff
+---
 
-## How can I edit this code?
+## 👤 예시 사용자 (페르소나)
 
-There are several ways of editing your application.
+- 이름: 김훌라  
+- 나이: 26  
+- 티어: 브론즈  
+- 주 포지션: 서포터  
+- KDA: 3.5  
+- 선호 성향: 욕설/반말 없는 매너 있는 유저  
+- 플레이 시간: 주로 저녁  
+- 니즈: 실력과 성향이 맞는 듀오와 함께 랭크 게임 플레이
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2a0513d6-2215-4fe0-9cfa-812b3d7dceff) and start prompting.
+## 🧩 핵심 기능 요구사항
 
-Changes made via Lovable will be committed automatically to this repo.
+1. **전적 연동/입력 기능**
+   - 라이엇 API를 통해 사용자 티어, 포지션, KDA 등을 자동 연동
+   - 또는 수동으로 자신의 정보를 입력 가능
 
-**Use your preferred IDE**
+2. **필터 기반 매칭 요청 기능**
+   - 사용자가 원하는 조건 설정:
+     - 티어 범위
+     - 주 포지션 (ex. 정글, 탑 등)
+     - 성향 (욕설 없음, 음성 가능 등)
+     - 플레이 시간대
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. **유저 리스트 추천 기능**
+   - 조건에 맞는 사용자들을 리스트 형태로 제공
+   - 전적/성향 요약 프로필 확인 가능
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+4. **매칭 요청 기능**
+   - 원하는 유저에게 듀오 요청을 보냄
+   - 수락 시 외부 플랫폼(디스코드 등)으로 연결
 
-Follow these steps:
+5. **매칭 평가 기능**
+   - 매칭 이후 간단한 평가(예: 매너 좋음/실력 좋음/다시는 안 하고 싶음 등)를 남겨
+   - 추천 알고리즘 개선에 활용됨
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🤖 요청
 
-# Step 3: Install the necessary dependencies.
-npm i
+위 내용을 기반으로 아래 항목을 생성해줘:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/2a0513d6-2215-4fe0-9cfa-812b3d7dceff) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- 전체 UX 흐름 요약 (간단한 단계로)
+- 화면 구성 예시 (각 기능이 들어갈 페이지/컴포넌트 등)
+- 이 서비스에 적합한 기능 구조와 기능 목록 (프로토타입 기준)
